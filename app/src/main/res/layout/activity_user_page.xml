@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeon.helper.userPage.userPageMainActivity"
+    android:orientation="vertical"
+    android:background="#e8f3fd"
+   >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!--타이틀 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2171b5">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:text="사용자 정보보기"/>
+
+        </LinearLayout>
+
+        <!-- 이미지 프로필 -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:background="#000000">
+
+            <ImageView
+                android:id="@+id/userPageProfile"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/kakao_default_profile_image" />
+
+        </LinearLayout>
+
+        <!--경계선-->
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <!-- 아이디 닉네임 -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="아이디 : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:id="@+id/userPageUserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="UserId"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="닉네임 : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/userPageNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="홍길동이"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail :"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wldnd@naver.com"
+                android:textSize="20sp"
+                android:id="@+id/userPageUserEmail"/>
+
+        </LinearLayout>
+
+        <!--지역 성별 -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지역 :"
+                android:textSize="20sp" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="인천광역시"
+               android:textSize="20sp"
+               android:id="@+id/uasePageLocation"/>
+
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/genderdefault"
+                android:id="@+id/userPageGender"/>
+
+        </LinearLayout>
+
+        <!--도움을 요청한수, 도와준 횟수 경고수-->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="도움 요청 횟수 :"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/userPageAskCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="20 회"
+                    android:textAlignment="textStart"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="도움 지원 횟수 :"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/userPageGiveCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="20 회"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yellowcards"/>
+
+                <TextView
+                    android:id="@+id/userPagePenaltyCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="20 회"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <!--평점과 별-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="평점 :"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/userPageUserGPA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="5.0점"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="30dp"
+                android:focusableInTouchMode="false"
+                android:minHeight="40dp"
+                android:numStars="5"
+                android:stepSize="0.25" />
+
+            <!--style="@android:style/Widget.Material.RatingBar.Indicator"-->
+        </LinearLayout>
+
+        <!--경계선-->
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자기소개"
+            android:textSize="20sp"/>
+
+        <!--자기소개-->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/userPageIntroduceEditT"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:maxLines="5"
+                android:textSize="15sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+
+        </LinearLayout>
+
+        <!--도움 후기 댓글 -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="더보기"
+                    android:textSize="13dp"
+                    android:id="@+id/userPageModeViewRiple"/>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/userPageRiple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/userPageNoRipleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="평가 글이 없습니다."
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <!--경계선-->
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+
+        <!--버튼들-->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/userPageOkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="확인"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_background"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/userPageEditBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="수정"
+                android:background="@drawable/button_background"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/userPageFriendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="친구신청"
+                android:textSize="13sp"
+                android:background="@drawable/button_background"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

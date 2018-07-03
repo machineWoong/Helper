@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="3dp"
+    android:id="@+id/itemLayout">
+
+
+    <!--날짜-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성일 : "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/makeDate"
+            android:text="2000/02/12"/>
+
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기간 : "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdateItem"
+            android:text="2000/02/12"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edateItem"
+            android:text="2000/02/12"/>
+
+
+    </LinearLayout>
+    <!--제목-->
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/askHelpItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="임시 제목"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!--주소-->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="주소 : "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/askHelpItemAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="9"
+            android:ellipsize="end"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:text="임시 텍스트 입니다..."
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!--수고비 성별 맵 사진 여부-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/payItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수고비"
+            android:textAlignment="center" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/money" />
+
+        <ImageView
+            android:id="@+id/itemGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/genderdefault" />
+
+        <ImageView
+            android:id="@+id/itemPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/itemphoto" />
+
+        <ImageView
+            android:id="@+id/itemMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/itemmap" />
+
+
+    </LinearLayout>
+
+    <!--경계선-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line"/>
+
+
+
+
+</LinearLayout>

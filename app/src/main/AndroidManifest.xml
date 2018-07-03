@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jeon.helper">
+
+    <uses-sdk android:minSdkVersion="4" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 진동 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 와이파이 상태 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 데이터 통신 상태 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 카메라 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 진동 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- GPS -->
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <!-- 지도 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 전화 걸기 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <application
+        android:name=".kakaoLogin.GlobalApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/help"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/help"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.jeon.helper.askHelp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".HelperMain" />
+
+        <activity
+            android:name=".loginJoin.login"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+
+
+        </activity>
+        <activity
+            android:name=".loginJoin.join"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userPage.userPageMainActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".setting.settingMainActivity"
+            android:theme="@style/Transparent" />
+        <activity android:name=".giveHelp.giveHelpMainActivity" />
+        <activity android:name=".askHelp.askHalpMainActivity" />
+        <activity android:name=".exchange.exchangeMainActivity" />
+        <activity android:name=".chatting.chattingMainActivity" />
+        <activity android:name=".askHelp.addAskHelp" />
+        <activity android:name=".showBigImage" />
+        <activity android:name=".askHelp.addHelpMap" />
+        <activity android:name=".askHelp.askHelpItem" />
+        <activity android:name=".askHelp.showMyAskHelp" />
+        <activity android:name=".askHelp.showAskHelpBigImage" />
+
+        <!-- 카카오 로그인 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <!-- 구글 맵 -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/googleMapkey" />
+
+        <activity android:name=".askHelp.editAskHelp" />
+        <activity android:name=".askHelp.editAskHelpMap" />
+        <activity android:name=".giveHelp.showGiveHelp" />
+        <activity android:name=".getKakaoUserDataSet" />
+        <!-- <activity android:name=".helpList.myAsk" /> -->
+        <!-- <activity android:name=".helpList.myGive" /> -->
+        <activity android:name=".helpList.helpListMain" />
+        <activity android:name=".userPage.myPageEdit" />
+        <activity android:name=".userPage.showMoreRiple" />
+        <activity android:name=".helpList.showDetailContent" />
+        <activity android:name=".cash.cash_main" />
+        <activity android:name=".cash.exchange_Real_money" />
+        <activity android:name=".cash.refillCash_Main" />
+        <activity
+            android:name=".selectMenu"
+            android:theme="@style/Transparent" />
+        <activity android:name=".chatting.chattingRoom" />
+
+        <!-- 서비스 -->
+        <service
+            android:name=".socketService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".loginJoin.searchPassWord" />
+        <activity android:name=".noti_table.noti_List_Main" />
+        <activity android:name=".noti_table.make_noti_page" />
+        <activity android:name=".noti_table.show_noti" />
+
+        <!-- 파이어베이스 클라우드 메세지 -->
+        <service android:name=".fireBase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fireBase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".userPage.myAllRecomment" />
+        <activity android:name=".setting.my_Setting_Page" />
+        <activity android:name=".setting.service_Center" />
+        <activity android:name=".setting.mail_send_service_Center" />
+        <activity android:name=".surrounding_Map.surround_loaction_data"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8f3fd"
+    tools:context="com.example.jeon.helper.loginJoin.searchPassWord">
+
+    <!-- 타이틀 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   계정찾기"
+        android:textSize="30dp"
+        android:background="#2171b5"
+        android:textColor="#ffffff"/>
+
+
+    <!-- 안내 글 -->
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/megaphone"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계정 찾기 안내"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <!-- 공지사항-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/exchange_background"
+            android:text="\n\n
+            \n    회원가입한 아이디를 입력하세요.\n
+            \n    가입시 등록한 이메일 계정으로 \n
+            \n    인증번호가 발송됩니다.\n
+            \n    인증번호를 올바르게 입력해주세요 \n\n\n"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="아이디 입력."
+        android:textAlignment="center"
+        android:id="@+id/search_page_eMail"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="인증번호 전송"
+            android:id="@+id/search_page_code_send_Btn"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

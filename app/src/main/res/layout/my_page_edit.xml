@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jeon.helper.userPage.myPageEdit"
+    android:background="#e8f3fd"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="수정 페이지"
+        android:textSize="20sp"
+        android:background="#2171b5"
+        android:textColor="#ffffff"/>
+    <!-- 이미지 프로필 -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/EdituserPageProfile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/kakao_default_profile_image" />
+
+    </LinearLayout>
+
+    <!--경계선-->
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail :"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/EditUserPageUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!--지역 성별 -->
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지역 :"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/EditUserPageLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인천광역시"
+            android:textSize="20sp" />
+
+
+        <CheckBox
+            android:id="@+id/EditUserPageGenderMen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남자"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/EditUserPageGenderGirl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여자"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!--경계선-->
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자기소개"
+        android:textSize="20sp" />
+
+    <!--자기소개-->
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/EditUserPageIntroduceEditT"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxLines="5"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <!--경계선-->
+
+
+    <!--버튼들-->
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/EditUserPageOkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:text="저장"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/EditUserPageCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:text="취소"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

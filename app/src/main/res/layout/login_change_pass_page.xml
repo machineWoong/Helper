@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+
+    android:background="#e8f3fd"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2171b5"
+        android:text="새 비밀번호 설정"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="비밀 번호 서식"
+        android:textColor="#ff0000"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:text="영문(대소문자 구분),숫자 ,특수문자로  8~10 자리 조합"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="새 비밀번호 입력"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:id="@+id/resetPass"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="새 비밀번호 확인"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:id="@+id/resetPassCheck"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetPassBtn"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_marginRight="20dp"
+        android:text="확인 / 변경"/>
+
+</LinearLayout>

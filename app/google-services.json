@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "543382348891",
+    "firebase_url": "https://loyal-saga-202409.firebaseio.com",
+    "project_id": "loyal-saga-202409",
+    "storage_bucket": "loyal-saga-202409.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543382348891:android:02c88f2ecb1f3322",
+        "android_client_info": {
+          "package_name": "com.example.jeon.helper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543382348891-cpad774lu96058jdrhrujei9i73rs4ea.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "543382348891-cpad774lu96058jdrhrujei9i73rs4ea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqpE-0lkTKgWKlLOmgPuL61LV-O2t8_IY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

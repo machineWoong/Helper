@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#e8f3fd"
+    tools:context="com.example.jeon.helper.cash.exchange_confirm">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2171b5"
+        android:text="  인증"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="인증 키를 입력해 주세요"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/getConfirmKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:hint="6자리"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:maxLines="1" />
+
+    <LinearLayout
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/exchangeCommit"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:background="@drawable/button_background"
+            android:text="환전"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/exchangeCommitCancel"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_background"
+            android:text="취소"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

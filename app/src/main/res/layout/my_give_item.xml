@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myGiveItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e8f3fd"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+
+    <!-- 진행상태  기간 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="진행 상태:"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/myGiveState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="진행중"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기간 :"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/myGiveSdateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="1월1일"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="~"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/myGiveEdateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="1월1일"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <!--요청자-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="요청자 :"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myGiveAskUserId"
+            android:text="홍길동이"
+            android:textSize="13sp"/>
+
+
+    </LinearLayout>
+
+    <!-- 제목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목 :"
+            android:textAlignment="textStart"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/myGiveTitleItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="9"
+            android:text="제목입니다."
+            android:textAlignment="textStart"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+    <!-- 지역 주소 수고비 성별-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/myGiveLocationItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="인천광역시"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:text=":"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/myGiveAddressItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="계양구청 앞 신세계 소호"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/myGivePayItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0000000"
+            android:textAlignment="viewEnd"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/money" />
+
+
+    </LinearLayout>
+
+    <!--경계선-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8f3fd"
+    tools:context="com.example.jeon.helper.cash.exchange_Real_money"
+    >
+
+    <!-- 타이틀 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   환전"
+        android:textSize="30dp"
+        android:background="#2171b5"
+        android:textColor="#ffffff"/>
+
+
+    <!-- 안내 글 -->
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/megaphone"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="환전 안내"
+            android:textSize="20sp"/>
+
+
+
+
+    </LinearLayout>
+
+    <!-- 공지사항-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/exchange_background"
+            android:text="\n\n\n    환전신청 후 1~2시간 이내에 계좌로 송금됩니다.\n
+            \n    환전 금액은 보유 캐쉬보다 적어야 합니다.\n
+            \n    알맞은 환전 금액을 입력후 환전 버튼을 누르면,\n
+            \n    회원가입시 등록한 이메일로 인증번호가 발송됩니다.\n
+            \n    인증번호를 입력하시면 됩니다.\n\n\n"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <!--경계선-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+    <!-- 보유 캐쉬 -->
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보유 캐쉬"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="200,000"
+            android:id="@+id/exchangeUserHaveCash"/>
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bigmoney"/>
+
+
+
+    </LinearLayout>
+
+
+    <!-- 환전 캐쉬 -->
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="환전 금액"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/exchangeCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="100,000"
+            android:inputType="number"
+            android:textSize="15sp" />
+
+        <ImageView
+
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bigmoney"
+            android:layout_gravity="center_vertical"/>
+
+
+
+    </LinearLayout>
+
+
+    <!--경계선-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+
+    <!-- 버튼 -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+
+        <Button
+            android:id="@+id/exchangeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:text="환전" />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:text="취소"
+            android:id="@+id/exchangeCancelBtn"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

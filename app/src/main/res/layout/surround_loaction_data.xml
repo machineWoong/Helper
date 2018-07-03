@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8f3fd"
+    tools:context="com.example.jeon.helper.surrounding_Map.surround_loaction_data">
+
+    <!-- 타이틀 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2171b5">
+
+        <ImageView
+            android:id="@+id/surrond_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주변 정보"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <!-- 버튼 -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/restaurant"
+            android:text="음식점" />
+
+        <ImageView
+            android:id="@+id/hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hospital"
+            android:text="병원" />
+
+
+        <ImageView
+            android:id="@+id/store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/store"
+            android:text="편의점" />
+
+
+        <ImageView
+            android:id="@+id/book_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/bookstore"
+            android:text="서점" />
+
+
+        <ImageView
+            android:id="@+id/cafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/cafe"
+            android:text="까페" />
+
+    </LinearLayout>
+
+    <!-- 경계선 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:scaleType="fitXY"/>
+
+    <!-- 프래그먼트는 테두리나 배경이 없기 때문에,  시각적으로 모양을 주려면 다른 레이아웃 요소 내에 프래그먼트를 중첩 시켜야 한다.-->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:name="@+id/surround_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        card_view:cardCornerRadius="4dp">
+
+        <fragment
+            android:id="@+id/surround_place_autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></fragment>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- 지도 프레그 먼트-->
+    <fragment
+        android:id="@+id/surround_mapSetting"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9" />
+
+</LinearLayout>

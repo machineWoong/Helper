@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeon.helper.getKakaoUserDataSet"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2171b5"
+        android:text="  추가 정보 입력"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추가 정보 입력 거부시, 서비스이용이 제한됩니다."/>
+
+    <!--경계선-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+    <!-- 이메일 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E_Mail"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/kakaoEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Helper@naver.com"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emailCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이메일은 비밀번호 분실시 찾기에 사용됩니다."
+        android:textAlignment="center"
+        android:textSize="10sp" />
+
+    <!-- 성별 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="성별"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/kakaoMen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="남자" />
+
+        <CheckBox
+            android:id="@+id/kakaoGirl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="여자" />
+
+
+    </LinearLayout>
+
+    <!-- 지역 스피너 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="지역선택"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/kakaoLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <!-- 가입 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:id="@+id/kakaoJoinBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:text="등록" />
+
+        <Button
+            android:id="@+id/KakaoJoinCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:text="거절" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Helper</string>
+    <string name="kakao_app_key">0de173d3f74b7dd8d0c96092c2cf1e4c</string>
+
+    <string name="googleMapkey">AIzaSyCqwlSSvcE2R9wtPV4PQtmYbgEFenBtO8Q</string>
+    <string name="title_activity_help_list_main">helpListMain</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

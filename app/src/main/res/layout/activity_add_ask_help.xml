@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#e8f3fd"
+    tools:context="com.example.jeon.helper.askHelp.addAskHelp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2171b5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="도움 요청하기"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <!--제목-->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="제목 :"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/askHelpTilte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:hint="목록에 노출될 제목"
+                    android:textSize="20sp"
+                    android:maxLines="1"/>
+
+            </LinearLayout>
+
+            <!--기간 선택-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.3"
+                    android:text="기간 선택 :"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="시작일(월/일)"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.3"
+                    android:text="~"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="종료일(월/일)"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    />
+
+            </LinearLayout>
+
+            <!--성별 및 인원 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="성별 : "
+                    android:textAlignment="viewStart"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/addHelpMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="남" />
+
+                <CheckBox
+                    android:id="@+id/addHelpGirl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="여" />
+
+                <CheckBox
+                    android:id="@+id/addHelpEvery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="무관" />
+
+                <EditText
+                    android:id="@+id/helpcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:maxLines="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인원(명)"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <!--지역-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="지역 :"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/askHelpLocationSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+
+
+            </LinearLayout>
+
+            <!--상세주소-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="상세주소 :"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/locationAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:hint="도움을 받기 위한 상세한 주소"
+                    android:textSize="15sp"
+                    android:maxLines="1"/>
+
+                <ImageView
+                    android:id="@+id/locationMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map" />
+
+            </LinearLayout>
+
+            <!-- 보유중 캐쉬-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="보유중인 캐쉬 :"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/userHaveCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:textAlignment="viewEnd"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(원)"/>
+
+            </LinearLayout>
+
+
+            <!--수고비-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="수고비 :"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/askHelpPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="9"
+                    android:hint="(모집인원 X 수고비) ≤소지금."
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(원)"/>
+
+
+
+            </LinearLayout>
+
+
+            <!--사진첨부 버튼-->
+            <LinearLayout
+
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:text="사진첨부 :"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/askHelpCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/camera" />
+
+                <ImageView
+                    android:id="@+id/askHelpGallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/gallery" />
+
+
+            </LinearLayout>
+
+            <!-- 설명문 -->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="첨부된 사진을 길게누르면 삭제 할 수 있습니다."
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!--첨부된 사진들-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/userImage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/empty" />
+
+                <ImageView
+                    android:id="@+id/userImage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/empty" />
+
+                <ImageView
+                    android:id="@+id/userImage3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/empty" />
+
+                <ImageView
+                    android:id="@+id/userImage4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/empty" />
+
+                <ImageView
+                    android:id="@+id/userImage5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/empty" />
+
+
+
+            </LinearLayout>
+
+
+
+            <!-- 내용입력-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="내용 :"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/askHelpContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:inputType="textMultiLine"
+                    android:maxLines="11"
+                    android:minLines="11"
+                    android:scrollbars="vertical"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!--저장 취소 버튼-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/askHelpSaveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="20dp"
+                    android:text="저장" />
+
+                <Button
+                    android:id="@+id/askHelpCancelBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:textColor="#ffffff"
+                    android:text="취소" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

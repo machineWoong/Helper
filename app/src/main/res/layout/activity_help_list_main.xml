@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jeon.helper.helpList.helpListMain"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"
+        app:tabSelectedTextColor="#ffffff"
+        app:tabTextColor="#63839e"
+        android:background="#2171b5"
+        />
+
+    <!-- tabSelectedTextColor  선택된 탭의 색-->
+    <!-- tabTextColor  선택안된 탭의 색-->
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pager"/>
+
+</LinearLayout>

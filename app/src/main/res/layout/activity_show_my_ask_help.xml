@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8f3fd"
+    tools:context="com.example.jeon.helper.askHelp.showMyAskHelp"
+ >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2171b5">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:text="내가 요청한 도움 보기"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <!-- 제목 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제목 : "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/show_Add_Ask_Help_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <!-- 기간 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기간 : "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/show_Add_Ask_Help_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="~"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/show_Add_Ask_Help_Date2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <!--성별 인원수 수고비-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="성별 : "
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/show_Add_Ask_Help_Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/genderdefault" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="모집인원 : "
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/show_Add_Ask_Help_helper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="명"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/money" />
+
+                <TextView
+                    android:id="@+id/show_Add_Ask_Help_Money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="00000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="(원)"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <!--지역 주소-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/show_Add_Ask_Help_Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인천광역시"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <!--상세 주소-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상세주소: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/show_Add_Ask_Help_Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상세주소"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--사진-->
+            <LinearLayout
+                android:id="@+id/show_Add_Ask_Help_ViewPagerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3">
+
+
+                <!--id="@+id/show_Add_Ask_Help_ViewPager"-->
+                <view
+                    android:id="@+id/show_Add_Ask_Help_ViewPager"
+                    class="android.support.v4.view.ViewPager"
+
+                    layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp" />
+
+            </LinearLayout>
+
+
+            <!-- 버튼 -->
+            <LinearLayout
+                android:id="@+id/showMyAskHelpBtnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ShowMyAskmissionLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/mission_show" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:text="수행지 보기" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ShowMyAskmeetingLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/meeting_show" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="도착지 보기\n(만남의 장소)" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 지도 -->
+            <LinearLayout
+                android:id="@+id/show_Add_Ask_Help_Map_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3"
+                android:baselineAligned="false">
+
+                <!-- 지도 프레그 먼트-->
+                <fragment
+                    android:id="@+id/show_Add_Ask_Help_Map"
+                    class="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!--경계선-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="내용"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showMyAskHelpContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="11"
+                    android:minLines="11"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 버튼-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/show_Add_Ask_Help_okBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/show_Add_Ask_Help_editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:text="수정" />
+
+    </LinearLayout>
+
+</LinearLayout>

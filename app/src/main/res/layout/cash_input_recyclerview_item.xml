@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/receiveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2018/02/02"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/senderNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="닉네임"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/receiveTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="제목"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/receiveMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="입금"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/receiveMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10,000"
+            android:textAlignment="viewEnd"
+            android:textColor="#050a9f"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/money"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"/>
+
+
+
+    </LinearLayout>
+
+
+    <!--경계선-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+</LinearLayout>

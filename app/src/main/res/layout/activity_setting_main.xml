@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outSettingPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jeon.helper.setting.settingMainActivity">
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:background="#e8f3fd"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#2171b5"
+            android:text="설정"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+        <!--경계선-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+
+        <TextView
+            android:id="@+id/gotoSetMySetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="환경 설정"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+        <!--경계선-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+
+        <TextView
+            android:id="@+id/gotoServiceCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="고객 센터"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <!--경계선-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+
+        <TextView
+            android:id="@+id/settingLogOut"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#ffe105"
+            android:text="LogOut"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+    </LinearLayout>
+
+</LinearLayout>

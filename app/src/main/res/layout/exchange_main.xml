@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeon.helper.exchange.exchangeMainActivity"
+
+    android:background="#e8f3fd"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#2171b5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="정산 Page"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/showExchangeOnGoing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="정산대기 보기"
+            android:textAlignment="viewEnd"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:id="@+id/showExchangeSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="정산완료 보기"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <!--경계선-->
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exchangeRecyclerView">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

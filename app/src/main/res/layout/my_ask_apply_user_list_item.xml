@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e8f3fd"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/applyUserListItemLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <!-- 프로필 사진 -->
+            <ImageView
+                android:id="@+id/applyUserProfile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/kakao_default_profile_image"
+                android:scaleType="fitXY"
+                />
+
+            <!-- 정보들 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <!-- 닉네임 -->
+                <TextView
+                    android:id="@+id/applyUserNick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="닉네임"
+                    android:textSize="15sp" />
+
+                <!-- 지역 성별-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="지역:"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/applyUserLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="인천광역시"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/applyUserGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/genderdefault" />
+
+                </LinearLayout>
+
+                <!-- 신용 점수  신고 당한 횟수-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="신용 점수:"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/applyUserPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="보통"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yellowcards" />
+
+
+                    <TextView
+                        android:id="@+id/applyUserPenalty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0회 "
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 버튼들 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/applyAccept"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:text="수락"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/applyDiny"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:text="거절"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--경계선-->
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+</LinearLayout>

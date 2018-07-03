@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f3fd"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수락대기중"
+            android:textSize="20dp"
+            android:id="@+id/friend_Ask_mode1"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/friend_Ask_mode2"
+            android:text="거절"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friend_Ask_List">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/friend_ask_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="받은 요청이 없습니다."
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+
+
+</LinearLayout>

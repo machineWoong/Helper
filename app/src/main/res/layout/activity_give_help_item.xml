@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/giveHelpLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="3dp"
+    android:orientation="vertical">
+
+
+    <!--날짜-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성일 : "
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/giveHelpMakeDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2000/02/12"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="기간 : "
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/giveHelpSdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2000/02/12"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~" />
+
+        <TextView
+            android:id="@+id/giveHelpEdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2000/02/12"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+    <!--제목-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/giveHelpTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="임시 제목"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!--주소-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="주소 :"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/giveHelpAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="9"
+            android:ellipsize="end"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:text="임시 텍스트 입니다..."
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <!--닉네임 수고비 성별 맵 사진 여부-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="요청인 :"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/giveHelpAskUserNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="hongGilDong"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/giveHelpPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수고비"
+            android:textAlignment="center" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/money" />
+
+        <ImageView
+            android:id="@+id/giveHelpGender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/genderdefault" />
+
+        <TextView
+            android:id="@+id/giveHelpHelperCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5명"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/giveHelpPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/itemphoto" />
+
+        <ImageView
+            android:id="@+id/giveHelpMap"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/itemmap" />
+
+
+    </LinearLayout>
+
+    <!--경계선-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:background="#e8f3fd"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2171b5"
+        android:text="인증 번호 확인"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/search_pass_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="인증키 6자리"
+        android:textAlignment="center" />
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:id="@+id/gotoChangeBtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:id="@+id/search_passCancel"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

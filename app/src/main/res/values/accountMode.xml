@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accountMode">
+        <item>전체 내역</item>
+        <item>입금 내역</item>
+        <item>출금 내역</item>
+    </string-array>
+</resources>

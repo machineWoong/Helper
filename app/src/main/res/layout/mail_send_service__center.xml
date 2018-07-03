@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jeon.helper.setting.mail_send_service_Center"
+    android:background="#e8f3fd">
+
+
+    <!-- 상단 타이틀바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2171b5">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="문의 하기"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <!-- 답장 받을 메일 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:scaleType="fitXY"/>
+
+    <!-- 제 목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="제목 : "
+            android:textSize="20dp" />
+
+
+
+        <Spinner
+            android:id="@+id/title_Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"></Spinner>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/self_make_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:hint="직 접 입 력"
+        android:textAlignment="center"
+        android:visibility="gone" />
+    <!-- 답장 받을 메일 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:scaleType="fitXY"/>
+
+    <!-- 내용 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내용 :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/eMaileContentToservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="자세한 내용을 입력해주시기 바랍니다."
+            android:minLines="13" />
+
+
+    </LinearLayout>
+
+    <!-- 답장 받을 메일 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="(답장 받으실 이메일 주소를 입력해주세요.)"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/UserEmail_forService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:hint="helper@naver.com"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textAlignment="center" />
+
+    <!-- 답장 받을 메일 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:scaleType="fitXY"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/send_service_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:text="보내기" />
+
+        <Button
+            android:id="@+id/send_service_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:text="취소" />
+
+    </LinearLayout>
+
+</LinearLayout>

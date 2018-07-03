@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f3fd"
+    tools:context="com.example.jeon.helper.giveHelp.giveHelpMainActivity"
+    android:orientation="vertical">
+
+    <!--SearchView 버튼-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2171b5"
+       >
+
+
+        <Spinner
+            android:id="@+id/giveHelpSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4" />
+
+        <SearchView
+            android:layout_marginTop="10dp"
+            android:id="@+id/giveHelpSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:focusable="false"
+            android:iconifiedByDefault="false"
+
+            android:queryHint="검색"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+    <!--리사이클러 뷰 -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/giveHelpRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

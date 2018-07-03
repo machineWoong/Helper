@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myAskItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="#e8f3fd"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="진행상태:"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="진행중"
+            android:textSize="15sp"
+            android:id="@+id/myAskState"/>
+
+    </LinearLayout>
+    <!-- 작성일 시작일 종료일-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="작성일 :"
+            android:textAlignment="textStart"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/myAskMakeDateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="2018/01/01"
+            android:textAlignment="textStart"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기간 :"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/myAskSdateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1월1일"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="~"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/myAskEdateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1월1일"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <!--제목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목 :"
+            android:textAlignment="textStart"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/myAskTitleItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="9"
+            android:text="제목입니다."
+            android:textAlignment="textStart"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+    <!-- 지역 주소-->
+    <!-- 수고비 성별 인원수 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/myAskLocationItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="인천광역시"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:text=":"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/myAskAddressItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="계양구청 앞 신세계 소호"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/myAskPayItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0000000"
+            android:textAlignment="viewEnd"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/money" />
+
+
+        <ImageView
+            android:id="@+id/myAskGenderItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/genderdefault" />
+
+        <TextView
+            android:id="@+id/myAskHelperItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="0명"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+
+    <!-- 지원 자수 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="지원자"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/myAskApplyCountItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="명"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!--경계선-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+</LinearLayout>

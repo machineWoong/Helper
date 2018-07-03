@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8f3fd"
+
+    tools:context="com.example.jeon.helper.userPage.showMoreRiple">
+
+
+    <!-- 댓글 -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/show_more_reple_user_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/kakao_default_profile_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/show_more_reple_user_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="닉네임" />
+
+                <TextView
+                    android:id="@+id/show_more_reple_comment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2001/02/20"
+                    android:textAlignment="viewEnd" />
+
+                <ImageView
+                    android:id="@+id/show_more_reple_show_list"
+                    android:layout_width="35dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/show_more_reple_comment_Count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(0)"
+                    android:textAlignment="center"
+                    android:textColor="#ff0000"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/show_more_reple_comment_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:background="#070261"
+                    android:text="수정"
+                    android:textColor="#ffffff" />
+
+
+                <TextView
+                    android:id="@+id/show_more_reple_comment_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:background="#070261"
+                    android:text="삭제"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/show_more_reple_comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="4"
+                android:text="내용입니다."
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 댓글 수정창-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/re_recomment_edit_Comment"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/re_recomment_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/re_comment_edit_commentEditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#070261"
+            android:text="변경"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/re_comment_edit__cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#ff0000"
+            android:text="취소"
+            android:textColor="#000000" />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <!--경계선-->
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+
+
+
+    <!-- 리사이클러 뷰-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/show_more_reple_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--경계선-->
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+
+    <!-- 입력창-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/show_more_make_reple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/make_reRecomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_comment" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

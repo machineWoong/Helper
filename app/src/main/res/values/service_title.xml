@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="service_title">
+        <item>----제목 선택----</item>
+        <item>어플리케이션 오류</item>
+        <item>계정 관련 문의</item>
+        <item>환전 및 충전</item>
+        <item>기타</item>
+        <item>직접 입력</item>
+    </string-array>
+</resources>
