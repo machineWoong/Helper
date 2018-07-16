@@ -25,7 +25,7 @@ import javax.mail.util.ByteArrayDataSource;
 public class GmailSender extends javax.mail.Authenticator{
     private String mailhost = "smtp.gmail.com";
     private String user = "jiung0802test";
-    private String password ="j10361215!";
+    private String password ="";
     private Session session;
     private String emailCode;
 
